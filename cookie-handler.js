@@ -30,11 +30,11 @@ const DAYS_TO_MS = 864e5;
 /**
  * Create a new cookie
  * @param {String} name The new cookie's name
- * @param {String} value The new cookie's value
+ * @param {String|Number} value The new cookie's value
  * @param {Number} [days=1] The numbers of days before expiration (default is 1)
  * 
  * @example
- * createCookie("myCookie", "42");
+ * createCookie("myCookie", 42);
  * createCookie("weekCookie", "nice", 7);
  */
 function createCookie (name, value, days=1) {
@@ -118,7 +118,7 @@ function isCookieDefined (...names) {
 /**
  * Edit a cookie. Return a boolean telling if the cookie has been edited.
  * @param {String} name The cookie to edit
- * @param {String} new_value The new cookie value
+ * @param {String|Number} new_value The new cookie value
  * @returns {Boolean} Has the cookie been edited ?
  * 
  * @example
