@@ -19,7 +19,7 @@ Une API de gestion de cookie simple pour le projet de dev web client-only.
 |Nom|Type|Description|
 |:-:|:-:|:-:|
 |``name``|``string``|Le nom du cookie|
-|``value``|``string``|Sa valeur|
+|``value``|``string\|number``|Sa valeur|
 |``days``|``number``|Le nombre de jours avant expiration|
 
 **Renvoie**
@@ -117,7 +117,7 @@ isCookieDefined("cookie1", "cookie2", "cookie3");
 |Nom|Type|Description|
 |:-:|:-:|:-:|
 |``name``|``string``|Le nom du cookie à modifier|
-|``new_value``|``string``|Sa nouvelle valeur|
+|``new_value``|``string\|number``|Sa nouvelle valeur|
 
 **Renvoie**
 
